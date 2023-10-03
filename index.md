@@ -21,7 +21,7 @@ I seem to find the interface of the following websites quite amazing:
 3) fill out the google doc to record the learnings.
 
 ***
-'this' is backticks.
+ `this`is backticks.
 
         this is code block 
         it can be accessed with either 3 backticks or 4 indentations.
