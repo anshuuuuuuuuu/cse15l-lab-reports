@@ -15,17 +15,20 @@ $ cd /path/to/directory
 
 # Working Directory: The working directory changes to /path/to/directory.
 # Output Explanation: Using cd with a path as an argument navigates you to the specified directory.
+![Image](1.png) 
 
 $ cd /nonexistent/directory
 
 # Working Directory: The working directory remains unchanged.
 # Output Explanation: This results in an error because /nonexistent/directory does not exist.
+![Image](5.png) 
 
 
 $ ls
 
 # Working Directory: This command lists files and directories in the current working directory.
 # Output Explanation: The output will display the files and directories in the current directory.
+![Image](2.png) 
 
 $ ls /path/to/directory
 
@@ -47,9 +50,11 @@ $ cat /path/to/file.txt
 
 # Working Directory: The working directory remains unchanged.
 # Output Explanation: This command displays the contents of the specified file.
+![Image](3.png)
 
 $ cat /nonexistent/file.txt
 
 # Working Directory: The working directory remains unchanged.
 # Output Explanation: This results in an error because /nonexistent/file.txt does not exist.
+![Image](4.png) 
 
