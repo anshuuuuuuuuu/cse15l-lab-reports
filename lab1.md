@@ -10,6 +10,7 @@ $ cd
 
 ## Working Directory: This command does not change the working directory.
 ## Output Explanation: When 'cd' is used without arguments, it takes you to your home directory.
+![Image](9.jpg)
 
 $ cd /path/to/directory
 
