@@ -9,14 +9,16 @@ In this lab report, we will explore basic filesystem commands, including `cd`, `
 $ cd
 
 ## Working Directory: This command does not change the working directory.
-## Output Explanation: When 'cd' is used without arguments, it takes you to your home directory.
+## Output Explanation: When 'cd' is used without arguments, it takes you to your home directory. If we are in the home directory, there would be no change. If not, we will go back to the previous directory if cd is used without any commands. There would not be any kind of error. 
 ![Image](9.jpg)
 
 $ cd /path/to/directory
 
 ## Working Directory: The working directory changes to /path/to/directory.
 ## Output Explanation: Using cd with a path as an argument navigates you to the specified directory.
-![Image](1.jpg) 
+![Image](1.jpg)
+
+
 
 $ cd /nonexistent/directory
 
