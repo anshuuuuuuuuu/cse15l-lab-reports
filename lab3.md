@@ -239,4 +239,15 @@ biomed//1471-2466-1-1.txt:        homosexuality in 1 patient with small cell can
 biomed//1471-2466-1-1.txt:        develop in patients with HIV. Because homosexuality and
 biomed//1471-2466-1-1.txt:        the PIP study, homosexuality was not a predominant HIV risk
 ```
+## SOURCES USED
+
+I gave the following questions to chatGPT:
+q1. what does grep -r do
+output:
+![Image](gpt1.png)
+
+
+q2. show example of grep -w
+output:
+![Image](gpt2.png)
 
