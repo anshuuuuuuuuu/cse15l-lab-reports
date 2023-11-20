@@ -1,6 +1,75 @@
 # LAB REPORT 3
 ---
 the lab report shows the concept of bugs and explores the command line options for grep
+## PART 1
+
+### Failure-Inducing Input:
+
+```
+@Test
+public void testGetFiles_Failure() throws IOException {
+    File start = new File("some-files/even-more-files/");
+    List<File> actualFiles = FileExample.getFiles(start);
+    // This list should include all files in 'even-more-files' directory and its subdirectories
+    List<File> expectedFiles = Arrays.asList(
+        new File("some-files/even-more-files/d.java"),
+        new File("some-files/even-more-files/a.txt")
+        // Add other files if any subdirectories exist
+    );
+    assertEquals(expectedFiles, actualFiles);
+}
+```
+
+### Non Failure-inducing input 
+```
+@Test
+public void testGetFiles_Success() throws IOException {
+    File start = new File("some-files/a.txt");
+    List<File> actualFiles = FileExample.getFiles(start);
+    // This list should only contain 'a.txt' as it is a file, not a directory
+    List<File> expectedFiles = Collections.singletonList(
+        new File("some-files/a.txt")
+    );
+    assertEquals(expectedFiles, actualFiles);
+}
+
+```
+
+### Bug fix:
+### Before:
+```
+static List<File> getFiles(File start) throws IOException {
+    List<File> result = new ArrayList<>();
+    result.add(start);
+    if(start.isDirectory()) {
+        File[] paths = start.listFiles();
+        for(File subFile: paths) {
+            result.add(subFile);
+        }
+    }
+    return result;
+}
+
+```
+
+### After:
+```
+static List<File> getFiles(File start) throws IOException {
+    List<File> result = new ArrayList<>();
+    if(start.isFile()) {
+        result.add(start);
+    } else if(start.isDirectory()) {
+        File[] paths = start.listFiles();
+        if(paths != null) {
+            for(File subFile : paths) {
+                result.addAll(getFiles(subFile));
+            }
+        }
+    }
+    return result;
+}
+```
+
 
 ## PART 2
 
