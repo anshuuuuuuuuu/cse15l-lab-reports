@@ -5,7 +5,7 @@ For the lab report this week, reproduce the task from above on your own. For eac
 For example, when you run the tests, you might want to use the up arrow or Ctrl-R to access your bash history rather than typing in the full command with classpath, etc. You might say something like this accompanying the screenshot for running the tests:
 
 
-##Logging into ieng and cloning the repository 
+## Logging into ieng and cloning the repository 
 keys pressed: `ssh cs15lfa23md@ieng6.ucsd.edu and then <enter>` 
 
 ![Image](ieng.png)
@@ -14,7 +14,7 @@ keys pressed: `git clone https://github.com/ucsd-cse15l-s23/lab7 and <enter>`
 
 ![Image](clone.png)
 
-##Running the tests from lab 
+## Running the tests from lab 
 
 Go to lab 7 using:
 `cd lab7 and <enter>`
@@ -36,13 +36,13 @@ Initially the cursor was at the bottom of the left side. It had to be to the pla
 
 ![Image](vim.png)
 
-##Re-running the tests
+## Re-running the tests
 
 `bash test.sh and <enter>`
 
 ![Image](test1.png)
 
-##Commit and push to GitHub account 
+## Commit and push to GitHub account 
 
 `git add ListExamples.java and then <enter>`
 `git commit -m main <enter>`
